@@ -25,4 +25,5 @@ router.register("courses", CoursesViewSet, basename="courses")
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("api/v1/", include(router.urls)),
-]
+
+] + router.urls
